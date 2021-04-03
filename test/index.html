@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <button type="button" name="button" onclick="set()">Set cookie</button>
+    <button type="button" name="button" onclick="get()">Get Cookie</button>
+    <button type="button" name="button" onclick="read()">Read all cookie</button>
+    <button type="button" name="button" onclick="remove()">Remove Cookie</button>
+<script src="../src/soumik-cookie.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      function set(){
+        cookie.set("demo", "demo", "5"); // paramets cookie.set(cookie_name, cookie_value, expiration date)
+        }
+        function get() {
+          var a = cookie.get("demo");
+          if (a !== 'undefined') {
+            alert(a);
+          }
+          else{
+            alert("cookie is not set click cookie set");
+          }
+        }
+        function read(){
+          var read = cookie.read();
+          alert(read);
+        }
+        function remove() {
+          cookie.remove("demo");
+        }
+    </script>
+</body>
+</html>
