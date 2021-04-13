@@ -14,7 +14,7 @@
 ### Create cookie with only one line of sentence:
 
 Set a cookie
-```
+```javascript
 cookie.set(name, value, expiration_date);
 ```
 
