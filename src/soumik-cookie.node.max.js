@@ -37,7 +37,7 @@ class cookie{
         var cookieread = document.cookie;
   	    return cookieread;
     }
-    setTz(namep){
+    setTz(namep, time){
         let intlTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
         set(namep, intlTz, time);
     }
